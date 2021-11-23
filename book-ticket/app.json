@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/result/result",
+    "pages/alterpwd/alterpwd",
+    "pages/record/record",
+    "pages/book/book",
+    "pages/news/news",
+    "pages/detail/detail",
+    "pages/person/person",
+    "pages/load/load",
+    "pages/ticket/ticket",
+    "pages/me/me",
+    "pages/index1/index1",
+    "pages/pay/pay"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0767c8",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Bushomie",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "订票",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_focus.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "公告",
+        "iconPath": "images/bulletin.png",
+        "selectedIconPath": "images/bulletin_focus.png"
+      },
+      {
+        "pagePath":"pages/ticket/ticket",
+        "text":"订单",
+        "iconPath":"images/burger.png",
+        "selectedIconPath":"images/burger_focus.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_focus.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

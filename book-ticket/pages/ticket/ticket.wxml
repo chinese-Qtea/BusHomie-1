@@ -1,0 +1,13 @@
+<i-tabs current="{{ current }}" bindchange="handleChange">
+    <i-tab key="tab1" title="待支付"></i-tab>
+    <i-tab key="tab2" title="已支付"></i-tab>
+    <i-tab key="tab3" title="已结束"></i-tab>
+    <i-tab key="tab4" title="退款"></i-tab>
+</i-tabs>
+<view wx:if="{{current=='tab1'}}">
+<i-card title="福州——泉州" extra="60￥" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="content">车牌号：闽Cjy158</view>
+    <view slot="footer">请保管好自己的随身物品，负责人电话110</view>
+</i-card>
+<i-button bind:click="handleClick" type="success" shape="circle" size="small">生成登车码</i-button>
+</view>

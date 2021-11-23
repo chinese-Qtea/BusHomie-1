@@ -1,0 +1,6 @@
+<view id="container">
+  <view class="ewm">
+    <canvas style="width: 600rpx; height: 600rpx;" canvas-id="myQrcode"></canvas>
+  </view>
+  <button bindtap="searchFn" class="btn" type="primary">刷新二维码</button>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/result/result.wxml-->
+<view class='depAndarr'>
+   <text>{{dep}}-{{arr}}</text>
+</view>
+<view class='content'>
+   <view wx:for="{{busList}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}">
+    <i-card title="{{item.dep}} —— {{item.arr}}" extra="{{item.cost}}" >
+      <view slot="content">车牌号：{{item.busId}}</view>
+      <view slot="content">发车时间：{{item.time}}</view>
+
+    </i-card>  
+  </view> 
+</view>

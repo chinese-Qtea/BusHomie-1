@@ -1,3 +1,5 @@
+const { $Toast } = require('../../dist/base/index');
+
 Page({
 
   /**
@@ -9,6 +11,7 @@ Page({
     avatarUrl:"",
   },
 
+ 
   //页面加载的时候，将load页面传过来的值获取过来
   onLoad: function (options) {
     console.log("这里的options",options);
@@ -16,8 +19,15 @@ Page({
       nickName:options.nickName,
       avatarUrl:options.avatarUrl
     })
+  
   },
 
+ //发票提示
+  handleText () {
+    $Toast({
+        content: '尽请期待'
+    });
+  },
   //小程序声明周期的可见性函数里面来控制显示
   onShow(){
     let userInfo = wx.getStorageSync('userInfo')
@@ -94,5 +104,17 @@ Page({
       url: '/pages/loadByPhone/loadByPhone',
     })
   },
+  displayNotion(){
+    wx.showToast({
   
+    title: '敬请期待！',
+  
+    icon: 'none',
+  
+    duration: 2000//持续的时间
+  
+  })
+  }
 })
+
+  

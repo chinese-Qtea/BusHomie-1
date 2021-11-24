@@ -118,19 +118,14 @@ Page({
     app.globalData.arr = arrcity;
     app.globalData.deptime = deptime;
     wx.request({
-      url: 'http://localhost:8080/searchWx',
-      data: { depCity: depcity, arrCity: arrcity, depTime: deptime },
       success:function(res){
       //console.log(res.data[1]);
-      console.log(res)
-      app.globalData.port = res.data[0];
-      app.globalData.flight = res.data[1];
       wx.navigateTo({
         url: '/pages/result/result',
       })
       },
       fail:function(res){
-        console.log(res)
+
         wx.navigateTo({
           url: '/pages/result/result',
         })

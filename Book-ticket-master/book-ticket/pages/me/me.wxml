@@ -9,6 +9,11 @@
         <image src="{{avatarUrl}}" ></image>
         <text class="clickload" >{{nickName}}</text>
     </view>
-    <button class="exit" bindtap="exit"  style="position: relative; left: 0rpx; top: 528rpx">退出登录</button>
+    <i-cell-group>
+        <i-cell title="开发票" is-link bindclick="displayNotion"></i-cell>
+        <i-cell title="联系客服" is-link bindclick="displayNotion"></i-cell>
+        <i-cell title="关于我们" is-link bindclick="displayNotion"></i-cell>
+    </i-cell-group>
+    <button class="exit" bindtap="exit"  style="position: relative; left: 0rpx; top: 197rpx">退出登录</button>
 </view>
 <!-- 设置 -->

@@ -111,12 +111,6 @@ Page({
   },
   search:function(e){
     //先到数据库里面查询结果，然后跳转到result页面
-    var depcity = e.detail.value.depcity;
-    var arrcity = e.detail.value.arrcity;
-    var deptime = e.detail.value.deptime;
-    app.globalData.dep=depcity;
-    app.globalData.arr = arrcity;
-    app.globalData.deptime = deptime;
     wx.request({
       success:function(res){
       //console.log(res.data[1]);
